@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #c0e4ed;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
