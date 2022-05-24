@@ -36,7 +36,10 @@ a {
 }
 
 .navbar ul a:hover,
-.navbar ul a:focus,
-.navbar ul a:active {
+.navbar ul a:focus {
+  background-color: #272727;
+}
+
+.navbar ul .active {
   background-color: #303030;
 }
