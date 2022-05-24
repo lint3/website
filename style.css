@@ -10,6 +10,8 @@ a {
 
 .navbar a {
   color: #7cb9d3;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .navbar ul {
