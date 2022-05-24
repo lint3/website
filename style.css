@@ -25,13 +25,13 @@ a {
 .navbar .logo {
   display: block;
   color: #7cb9d3;
-  padding: 0 12px;
+  padding: 0 10px;
   font-size: 24px;
 }
 
 .navbar ul li a {
   color: #7cb9d3;
-  padding: 12px;
+  padding: 10px;
   display: block;
 }
 
