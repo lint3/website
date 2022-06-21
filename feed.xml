@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>cyptem Feed</title>
+  <description>Description</description>
+  <link>https://cyptem.com/</link>
+  <lastBuildDate>Can anything go here?</lastBuildDate>
+  <pubDate>2022-06-21T22:19:55+00:00</pubDate>
+
+  <item>
+    <title>The Bikes</title>
+    <description>Here is some text containing an interesting description.</description>
+    <link>https://cyptem.com/bikes.html</link>
+    <guid>00002</guid>
+    <pubDate>2022-06-21T21:19:55+00:00</pubDate>
+  </item>
+</channel>
+</rss>
