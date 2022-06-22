@@ -1,0 +1,120 @@
+@font-face {
+  src: url("/assets/fonts/SourceCodePro-Black.ttf") format("truetype");
+  font-family: "SourceCodeProBlack";
+/*
+  font-style: monospace;
+*/
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+  color: #242424;
+}
+
+a {
+  text-decoration: none;
+  color: #7cb9d3;
+}
+
+.navbar {
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-family: "SourceCodeProBlack";
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #7cb9d3;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: block;
+  color: #7cb9d3;
+  padding: 0 10px;
+  font-size: 1.5em;
+  font-weight: 1000;
+}
+
+.navbar ul li a {
+  color: #7cb9d3;
+  padding: 10px;
+  display: block;
+}
+
+.navbar ul a:hover,
+.navbar ul a:focus {
+  background-color: #272727;
+}
+
+.navbar ul .active {
+  background-color: #303030;
+}
+
+.buttons {
+  margin: 2em auto 2em;
+}
+
+.buttonbox {
+  text-align: center;
+  margin: 0 0.6em 1em;
+}
+
+.button {
+  padding:0.8em;
+  color:#d8d8d8;
+  background:#263435;
+  font-weight:bold;
+  display:block;
+  box-shadow:3px 3px 5px 3px #828282;
+  margin: 0 0 0.1em;
+}
+
+.button:hover {
+  text-decoration:none;
+  opacity:0.9;
+}
+
+html {
+  max-width: 90ch;
+  width: 95%;
+  padding: 0.2em 0.2em;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-size: 1em;
+}
+
+@media only screen and (min-width=36em) {
+  html {
+    max-width: 90ch;
+    margin: 0;
+  }
+  .buttons { margin: 1em auto 2em; }
+  .buttonbox {
+    float: left;
+    width: 44%;
+  }
+}
+
+.navlist {
+  list-style: none;
+}
+
+
+
+/*
+ * 
+ * Many (many) items "inspired" by source of:
+ * https://www.html5bones.com/
+ * 
+ */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippets</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="/assets/favicon.ico">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">JC</a>
+      <ul>
+        <li>
+          <a href="/index.html">Index</a>
+        </li>
+        <li>
+          <a href="/about.html">Jacob</a>
+        </li>
+      </ul>
+    </nav>
+    <p>
+      Paragraph
+    </p>
+    
+    <div class="buttons">
+      <div class="buttonbox">
+        <a class="button" href="index.html">Button A</a>
+      </div>
+      <div class="buttonbox">
+        <a class="button" href="index.html">Button B</a>
+      </div>
+    
+    <svg width="200" height="200" viewBox="0 0 220 220"
+     xmlns="http://www.w3.org/2000/svg">
+      <filter id="displacementFilter">
+        <feTurbulence type="turbulence" baseFrequency="0.04"
+            numOctaves="2" result="turbulence"/>
+        <feDisplacementMap in2="turbulence" in="SourceGraphic"
+            scale="50" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      
+      <filter id="smallDisplacement">
+        <feTurbulence type="turbulence" baseFrequency="0.04"
+            numOctaves="2" result="turbulence"/>
+        <feDisplacementMap in2="turbulence" in="SourceGraphic"
+            scale="50" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+
+      <circle cx="100" cy="100" r="100"
+          style="filter: url(#displacementFilter)"/>
+      
+      <style>
+        .swirlytext { front:bold 10px serif; fill: red; }
+      </style>
+      
+      <text x="100" y="100" class="swirlytext" filter: url(#smallDisplacement)">JC</text>
+    </svg>
+
+  </body>
+</html>
