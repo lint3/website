@@ -96,7 +96,7 @@ html {
 
 @media only screen and (min-width=36em) {
   html {
-    max-width: 90ch;
+    max-width: 120ch;
     margin: 0;
   }
   .buttons { margin: 1em auto 2em; }
