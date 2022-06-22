@@ -1,9 +1,7 @@
 @font-face {
   src: url("/assets/fonts/SourceCodePro-Black.ttf") format("truetype");
   font-family: "SourceCodeProBlack";
-/*
-  font-style: monospace;
-*/
+  /* font-style: monospace; */
 }
 
 body {
@@ -14,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #7cb9d3;
+  color: #679AB0;
 }
 
 .navbar {
@@ -48,7 +46,7 @@ a {
 
 .navbar ul li a {
   color: #7cb9d3;
-  padding: 10px;
+  padding: 1em;
   display: block;
 }
 
@@ -99,22 +97,21 @@ html {
     max-width: 120ch;
     margin: 0;
   }
+  
   .buttons { margin: 1em auto 2em; }
   .buttonbox {
     float: left;
     width: 44%;
   }
+  
+  .navbar ul li a {
+    padding: 3px 10px 3px;
+  }
 }
 
-.navlist {
+
+.navlist li {
   list-style: none;
 }
 
 
-
-/*
- * 
- * Many (many) items "inspired" by source of:
- * https://www.html5bones.com/
- * 
- */
