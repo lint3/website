@@ -16,6 +16,11 @@ a {
   color: #5D8A9E;
 }
 
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 .navbar {
   background-color: #1e1e1e;
   display: flex;
@@ -29,21 +34,24 @@ a {
 .navbar .logo {
   display: block;
   color: #7cb9d3;
-  padding: 0 0.4em;
+  padding: 0 3%;
+  margin: 0;
   font-size: 1.5em;
   font-weight: 1000;
 }
 
 .navbar a {
   color: #7cb9d3;
-  padding: 0.3em 0.5em;
+  padding: 0.1em 1%;
+  margin: 0.1em 0.5%;
   display: block;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 .navbar a:hover,
 .navbar a:focus {
   background-color: #272727;
-  text-decoration: underline;
 }
 
 .navbar .active {
@@ -80,10 +88,10 @@ html {
   padding: 0 0.2em;
   margin: 0 auto;
   line-height: 1.75;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: 48em) {
   html {
     max-width: 120ch;
     margin: 0 auto;
@@ -102,11 +110,11 @@ html {
 }
 
 
-.navlist li {
-  list-style-type: '-';
+.navlist li ul {
+  list-style-type: '-  ';
 }
 
-.navlist li .top {
+.navlist {
   list-style-type: none;
 }
 
