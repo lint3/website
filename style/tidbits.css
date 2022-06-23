@@ -31,10 +31,19 @@
 }
 
 
-.map {
+.gpx {
   border: 2px #aaa solid;
   border-radius: 5px;
   box-shadow: 0 0 3px 3px #ccc;
   width: 100%;
   margin: 1em auto;
+}
+
+.gpx .map { 
+  border: 1px #888 solid; 
+  border-left: none; 
+  border-right: none;
+  width: 800px; 
+  height: 500px; 
+  margin: 0; 
 }
