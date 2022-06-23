@@ -19,6 +19,7 @@ a {
 .navbar {
   background-color: #1e1e1e;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 1em;
   font-family: "SourceCodeProBlack";
@@ -28,14 +29,7 @@ a {
 .navbar a {
   color: #7cb9d3;
   margin: 0.1em 0.2em;
-}
-
-.navbar ul {
-  margin: 0;
   padding: 0;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
 }
 
 .navbar .logo {
@@ -98,7 +92,6 @@ html {
   html {
     max-width: 120ch;
     margin: 0 auto;
-    width: 100%;
     font-size: 1em;
   }
   
@@ -115,7 +108,7 @@ html {
 
 
 .navlist li {
-  list-style: none;
+  list-style-type: '-';
 }
 
 
