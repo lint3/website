@@ -26,12 +26,6 @@ a {
   font-weight: bold;
 }
 
-.navbar a {
-  color: #7cb9d3;
-  margin: 0.1em 0.2em;
-  padding: 0;
-}
-
 .navbar .logo {
   display: block;
   color: #7cb9d3;
@@ -46,12 +40,13 @@ a {
   display: block;
 }
 
-.navbar ul a:hover,
-.navbar ul a:focus {
+.navbar a a:hover,
+.navbar a a:focus {
   background-color: #272727;
+  text-decoration: underline;
 }
 
-.navbar ul .active {
+.navbar a .active {
   background-color: #303030;
 }
 
@@ -111,4 +106,7 @@ html {
   list-style-type: '-';
 }
 
+.navlist li .top {
+  list-style-type: none;
+}
 
