@@ -35,4 +35,8 @@ function display_gps(elt) {
       
   }).addTo(map);
   
+  
+  
 }
+
+display_gpx(document.getElementByID('demo-map'));
