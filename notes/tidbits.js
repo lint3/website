@@ -39,4 +39,4 @@ function display_gps(elt) {
   
 }
 
-display_gps(document.getElementById('demo-map'));
+display_gps(document.getElementById('demo'));
