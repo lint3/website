@@ -7,9 +7,8 @@
 body {
   background-color: #f5f5f5;
   font-family: sans-serif;
-  font-weight: bold;
   color: #242424;
-  margin: 0 0.1em 0.1em
+  margin: 0.3em 0.1em 0.1em
 }
 
 a {
@@ -92,13 +91,15 @@ html {
   padding: 0 0.2em;
   margin: 0 auto;
   line-height: 1.75;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 @media only screen and (min-width: 36em) {
   html {
     max-width: 120ch;
     margin: 0 auto;
+    width: 100%;
+    font-size: 1em;
   }
   
   .buttons { margin: 1em auto 2em; }
