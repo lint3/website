@@ -1,0 +1,33 @@
+.buttons {
+  margin: 2em auto 2em;
+}
+
+.buttonbox {
+  text-align: center;
+  margin: 0 0.6em 1em;
+}
+
+.button {
+  padding:0.8em;
+  color:#d8d8d8;
+  background:#263435;
+  font-weight:bold;
+  display:block;
+  box-shadow:3px 3px 5px 3px #828282;
+  margin: 0 0 0.1em;
+}
+
+.button:hover {
+  text-decoration:none;
+  opacity:0.9;
+}
+
+@media only screen and (min-width: 48em) {
+  .buttons { margin: 1em auto 2em; }
+  .buttonbox {
+    float: left;
+    width: 44%;
+  }
+}
+
+
