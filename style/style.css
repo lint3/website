@@ -34,19 +34,19 @@ a {
   font-weight: 1000;
 }
 
-.navbar ul li a {
+.navbar a {
   color: #7cb9d3;
   padding: 0.3em 0.5em;
   display: block;
 }
 
-.navbar a a:hover,
-.navbar a a:focus {
+.navbar a:hover,
+.navbar a:focus {
   background-color: #272727;
   text-decoration: underline;
 }
 
-.navbar a .active {
+.navbar .active {
   background-color: #303030;
 }
 
