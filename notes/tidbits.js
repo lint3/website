@@ -17,6 +17,11 @@ function display_gps(elt) {
   
   new L.GPX(url, {
     async: true,
+    marker_options: {
+      startIconUrl: 'pin-icon-start.png',
+      endIconUrl:   'pin-icon-end.png',
+      shadowUrl:    'pin-shadow.png',
+    },
   }).on('loaded', function(e) {
     var gpx = e.target;
     map.fitBounds(gpx.getBounds());
@@ -34,9 +39,6 @@ function display_gps(elt) {
       - gpx.get_elevation_loss()).toFixed(0);
       
   }).addTo(map);
-  
-  
-  
 }
 
 display_gps(document.getElementById('demo'));
