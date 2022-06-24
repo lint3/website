@@ -130,7 +130,9 @@ html {
 
 .navlist {
   list-style-type: none;
+}
+
+.cols {
   column-width: 16em;
   column-count: auto;
 }
-
