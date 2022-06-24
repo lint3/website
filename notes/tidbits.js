@@ -9,7 +9,7 @@ function display_gps(elt) {
   function _c(c) { return elt.getElementsByClassName(c)[0]; }
   
   var map = L.map(mapid);
-  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
   }).addTo(map)
   
