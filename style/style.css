@@ -85,6 +85,10 @@ a:focus {
   opacity:0.9;
 }
 
+.photo {
+  width: 100%;
+}
+
 html {
   max-width: 90ch;
   width: 97%;
