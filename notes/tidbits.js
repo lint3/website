@@ -18,9 +18,8 @@ function display_gps(elt) {
   new L.GPX(url, {
     async: true,
     marker_options: {
-      startIconUrl: 'pin-icon-start.png',
-      endIconUrl:   'pin-icon-end.png',
-      shadowUrl:    'pin-shadow.png',
+      startIconUrl: '/assets/icons/start.png',
+      endIconUrl:   '/assets/icons/endflag.png',
     },
   }).on('loaded', function(e) {
     var gpx = e.target;
