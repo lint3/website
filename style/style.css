@@ -130,5 +130,7 @@ html {
 
 .navlist {
   list-style-type: none;
+  column-width: 16em;
+  column-count: auto;
 }
 
