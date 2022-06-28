@@ -132,7 +132,12 @@ html {
   list-style-type: none;
 }
 
-.cols {
+.threecols {
   column-width: 16em;
+  column-count: auto;
+}
+
+.twocols {
+  column-width: 24em;
   column-count: auto;
 }
