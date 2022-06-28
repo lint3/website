@@ -132,12 +132,24 @@ html {
   list-style-type: none;
 }
 
+.cols {
+  column-count: auto;
+  margin: 1em 0;
+}
+
+.cols>li,
+.cols div {
+  break-inside: avoid;
+}
+
+.cols h2 {
+  margin: 0;
+}
+
 .threecols {
   column-width: 16em;
-  column-count: auto;
 }
 
 .twocols {
   column-width: 24em;
-  column-count: auto;
 }
