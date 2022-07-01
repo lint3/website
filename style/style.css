@@ -154,3 +154,16 @@ html {
 .twocols {
   column-width: 24em;
 }
+
+a.fancy {
+  border: #4A6D7D solid 1px;
+  border-radius: 4px;
+  padding: 0.1em;
+}
+
+a:hover.fancy,
+a:focus.fancy {
+  text-decoration: none;
+  background-color: #4A6D7D;
+  color: #f5f5f5;
+}
