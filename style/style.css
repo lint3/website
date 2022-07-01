@@ -12,8 +12,8 @@ body {
 }
 
 body>* {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
 }
 
 a {
@@ -87,6 +87,10 @@ html {
   font-size: 1.1em;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
 @media only screen and (min-width: 48em) {
   html {
     max-width: 120ch;
@@ -102,6 +106,15 @@ html {
   
   .navbar ul li a {
     padding: 0.1em 0.6em;
+  }
+  
+  body>* {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  h1, h2 {
+    text-align: left;
   }
 }
 
