@@ -4,6 +4,15 @@
   /* font-style: monospace; */
 }
 
+html {
+  max-width: 90ch;
+  width: 97%;
+  padding: 0 0.2em;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-size: 1.1em;
+}
+
 body {
   background-color: #f5f5f5;
   font-family: sans-serif;
@@ -16,15 +25,9 @@ body>* {
   margin-right: 0.3em;
 }
 
-a {
-  text-decoration: none;
-  color: #4A6D7D;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
+/*
+ ===========  NAV BAR  ===========
+*/
 
 .navbar {
   background-color: #1e1e1e;
@@ -67,6 +70,74 @@ a:focus {
   background-color: #303030;
 }
 
+/*
+ ===========  HEADINGS  ===========
+*/
+
+h1, h2 {
+  text-align: center;
+}
+
+/*
+ ===========  BIG SCREEN  ===========
+*/
+
+@media only screen and (min-width: 48em) {
+  html {
+    max-width: 120ch;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+  
+  body>* {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  .navbar ul li a {
+    padding: 0.1em 0.6em;
+  }
+  
+  h1, h2 {
+    text-align: left;
+  }
+}
+
+/*
+ ===========  REG ANCHOR  ===========
+*/
+
+a {
+  text-decoration: none;
+  color: #4A6D7D;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/*
+ ===========  FANCY ANCHOR  ===========
+*/
+
+a.fancy {
+  border: #4A6D7D solid 1px;
+  border-radius: 4px;
+  padding: 0.1em;
+}
+
+a:hover.fancy,
+a:focus.fancy {
+  text-decoration: none;
+  background-color: #4A6D7D;
+  color: #f5f5f5;
+}
+
+/*
+ ===========  IMAGES  ===========
+*/
+
 .photo {
   overflow: hidden;
   border-radius: 4px;
@@ -78,46 +149,9 @@ img {
   float:  left;
 }
 
-html {
-  max-width: 90ch;
-  width: 97%;
-  padding: 0 0.2em;
-  margin: 0 auto;
-  line-height: 1.75;
-  font-size: 1.1em;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-@media only screen and (min-width: 48em) {
-  html {
-    max-width: 120ch;
-    margin: 0 auto;
-    font-size: 1em;
-  }
-  
-  .buttons { margin: 1em auto 2em; }
-  .buttonbox {
-    float: left;
-    width: 44%;
-  }
-  
-  .navbar ul li a {
-    padding: 0.1em 0.6em;
-  }
-  
-  body>* {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  
-  h1, h2 {
-    text-align: left;
-  }
-}
-
+/*
+ ===========  SECONDARY NAV LIST  ===========
+*/
 
 .navlist li ul {
   list-style-type: '-  ';
@@ -127,6 +161,10 @@ h1, h2 {
   list-style-type: none;
   padding: 0;
 }
+
+/*
+ ===========  COLUMNS  ===========
+*/
 
 .cols {
   column-count: auto;
@@ -150,15 +188,4 @@ h1, h2 {
   column-width: 24em;
 }
 
-a.fancy {
-  border: #4A6D7D solid 1px;
-  border-radius: 4px;
-  padding: 0.1em;
-}
 
-a:hover.fancy,
-a:focus.fancy {
-  text-decoration: none;
-  background-color: #4A6D7D;
-  color: #f5f5f5;
-}
