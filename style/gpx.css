@@ -1,0 +1,13 @@
+.gpx {
+  border: 2px #aaa solid;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px #ccc;
+  margin: 1em auto;
+}
+
+.gpx .map { 
+  border: none; 
+  width: 100%; 
+  height: 48em; 
+  margin: 0; 
+}

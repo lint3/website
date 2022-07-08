@@ -4,6 +4,10 @@
   /* font-style: monospace; */
 }
 
+* {
+  margin: 0;
+}
+
 html {
   max-width: 90ch;
   width: 97%;
@@ -76,6 +80,7 @@ body>* {
 
 h1, h2 {
   text-align: center;
+  margin: 1em 0;
 }
 
 /*
@@ -155,6 +160,10 @@ img {
 
 .navlist li ul {
   list-style-type: '-  ';
+}
+
+.navlist>li>h2 {
+  margin-bottom: 0.5em;
 }
 
 .navlist {
