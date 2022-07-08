@@ -29,4 +29,4 @@ function display_gps(elt) {
   }).addTo(map);
 }
 
-display_gps(document.getElementById('demo'));
+display_gps(document.getElementById('map-embed'));

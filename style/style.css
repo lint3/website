@@ -80,7 +80,6 @@ body>* {
 
 h1, h2 {
   text-align: center;
-  margin: 1em 0;
 }
 
 /*
@@ -169,6 +168,8 @@ img {
 .navlist {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0.5em;
+
 }
 
 /*
