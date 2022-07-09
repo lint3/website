@@ -150,12 +150,13 @@ a:focus.fancy {
 .banner {
   height: 16em;
   object-fit: cover;
-  margin-bottom: 2em;
 }
 
 img {
+  margin-top: 1em;
   width: 100%;
   float:  left;
+  margin-bottom: 2em;
 }
 
 /*
