@@ -105,6 +105,10 @@ h3 {
   h1, h2 {
     text-align: left;
   }
+  
+  .banner {
+    height: 16em;
+  }
 }
 
 /*
@@ -149,13 +153,12 @@ a:focus.fancy {
 }
 
 .banner {
-  height: 16em;
   object-fit: cover;
+  height: 16em;
 }
 
 img {
   margin-top: 1em;
-  width: 100%;
 }
 
 /*
