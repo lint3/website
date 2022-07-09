@@ -23,6 +23,17 @@ function display_gps(elt) {
     layers: [osm]
   });
   
+  map.scrollWheelZoom.disable();
+  
+  map.on('click', function() {
+    if (map.scrollWheelZoom.enabled()) {
+      map.scrollWheelZoom.disable();
+    }
+    else {
+      map.scrollWheelZoom.enable();
+    }
+  });
+  
   var maplayers = {
     "OpenStreetMap": osm,
     "OpenTopoMap": otm
