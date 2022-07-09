@@ -147,6 +147,12 @@ a:focus.fancy {
   border: black solid 1px;
 }
 
+.banner {
+  height: 16em;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
 img {
   width: 100%;
   float:  left;
