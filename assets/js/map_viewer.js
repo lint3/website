@@ -48,6 +48,7 @@ function display_gps(elt) {
   
   if(elt.classList.contains("topo")) {
     otm.addTo(map);
+    osm.remove();
   }
 }
 
