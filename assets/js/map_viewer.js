@@ -46,7 +46,7 @@ function display_gps(elt) {
     layerControl.addOverlay(gpx, gpx.get_name());
   }).addTo(map);
   
-  if(elt.classList.contains("topo") {
+  if(elt.classList.contains("topo")) {
     otm.addTo(map);
   }
 }
