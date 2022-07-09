@@ -1,7 +1,7 @@
 @font-face {
   src: url("/assets/fonts/SourceCodePro-Black.ttf") format("truetype");
   font-family: "SourceCodeProBlack";
-  /* font-style: monospace; */
+  font-style: monospace;
 }
 
 * {
