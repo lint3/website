@@ -11,17 +11,15 @@
 html {
   max-width: 90ch;
   width: 97%;
-  padding: 0 0.2em;
-  margin: 0 auto;
   line-height: 1.75;
   font-size: 1.1em;
+  padding: 0;
 }
 
 body {
   background-color: #f5f5f5;
   font-family: sans-serif;
   color: #242424;
-  margin: 0.3em 0.1em 0.1em;
 }
 
 body>* {
@@ -91,11 +89,6 @@ h1, h2 {
     max-width: 120ch;
     margin: 0 auto;
     font-size: 1em;
-  }
-  
-  body {
-    margin-left: 1em;
-    margin-right: 1em;
   }
   
   .navbar ul li a {
