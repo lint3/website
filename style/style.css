@@ -84,6 +84,8 @@ body>* {
 
 h1, h2 {
   text-align: center;
+  font-family: "SourceCodeProBlack";
+  letter-spacing: -0.1rem;
 }
 
 h3 {
