@@ -20,7 +20,10 @@ function display_gps(elt) {
     marker_options: {
       startIconUrl: '/assets/icons/pin-icon-start.png',
       endIconUrl: '/assets/icons/pin-icon-end.png',
-      shadowUrl: '/assets/icons/pin-shadow.png'
+      shadowUrl: '/assets/icons/pin-shadow.png',
+      wptIconUrls: {
+        '': '/assets/icons/pin-icon-wpt.png'
+      }
     },
   }).on('loaded', function(e) {
     var gpx = e.target;
