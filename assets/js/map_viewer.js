@@ -45,6 +45,10 @@ function display_gps(elt) {
     map.fitBounds(gpx.getBounds());
     layerControl.addOverlay(gpx, gpx.get_name());
   }).addTo(map);
+  
+  if(elt.classList.contains("topo") {
+    otm.addTo(map);
+  }
 }
 
 display_gps(document.getElementById('map-embed'));
