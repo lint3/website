@@ -43,7 +43,7 @@ function display_gps(elt) {
   }).on('loaded', function(e) {
     var gpx = e.target;
     map.fitBounds(gpx.getBounds());
-    control.addOverlay(gpx, gpx.get_name());
+    layerControl.addOverlay(gpx, gpx.get_name());
   }).addTo(map);
 }
 
