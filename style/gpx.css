@@ -10,3 +10,10 @@
   width: 100%; 
   height: 48em; 
 }
+
+.leaflet-control-messagebox {
+  display: none; /* Initially hidden */
+  border: 2px solid red;
+  background-color: white;
+  padding: 3px 10px;
+}
