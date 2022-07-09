@@ -28,7 +28,7 @@ function display_gps(elt) {
     "OpenTopoMap": otm
   };
   
-  var layerControl = L.control.layers(osm, otm).addTo(map);
+  var layerControl = L.control.layers(maplayers).addTo(map);
   
   new L.GPX(url, {
     async: true,
