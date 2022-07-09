@@ -26,8 +26,8 @@ body {
 }
 
 body>* {
-  margin-left: 0.3em;
-  margin-right: 0.3em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /*
@@ -44,6 +44,8 @@ body>* {
   font-weight: bold;
   border-radius: 4px;
   margin-bottom: 1em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
 }
 
 .navbar .logo {
