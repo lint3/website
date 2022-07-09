@@ -21,7 +21,7 @@ function display_gps(elt) {
   
   var map = L.map(mapid, {
     layers: [osm]
-  );
+  });
   
   var maplayers = {
     "OpenStreetMap": osm,
