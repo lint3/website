@@ -24,13 +24,31 @@ function display_gps(elt) {
   });
   
   map.scrollWheelZoom.disable();
+  map.dragging.disable();
+  
+  L.Control.textbox = L.Control.extend({
+      onAdd: function(map) {
+        var text = L.DomUtil.create('div');
+        text.id = "info_text";
+        text.innerHTML = "<strong>Click/tap to enable map interaction</strong>"
+        return text;
+      },
+      
+      onRemove: function(map) {
+        // nothing
+      }
+  });
+  L.control.textbox = function(opts) {return new L.Control.textbox(opts);}
+  L.control.textbox({ position: 'bottomleft' }).addTo(map);
   
   map.on('click', function() {
     if (map.scrollWheelZoom.enabled()) {
       map.scrollWheelZoom.disable();
+      map.dragging.disable();
     }
     else {
       map.scrollWheelZoom.enable();
+      map.dragging.enable();
     }
   });
   
