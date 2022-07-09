@@ -86,6 +86,10 @@ h1, h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 1em;
+}
+
 /*
  ===========  BIG SCREEN  ===========
 */
@@ -155,8 +159,6 @@ a:focus.fancy {
 img {
   margin-top: 1em;
   width: 100%;
-  float:  left;
-  margin-bottom: 2em;
 }
 
 /*
