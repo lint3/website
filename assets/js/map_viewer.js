@@ -74,10 +74,16 @@ function display_gps(elt) {
   box.show( 'Click/tap to enable interaction' );
   map.scrollWheelZoom.disable();
   map.dragging.disable();
+  var togglecount = 0;
   
 
   
   map.on('click', function() {
+    if (togglecount < 2) {
+      togglecount = togglecount + 1;
+    } else {
+      box.remove();
+    }
     if (map.scrollWheelZoom.enabled()) {
       map.scrollWheelZoom.disable();
       map.dragging.disable();
