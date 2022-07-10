@@ -68,7 +68,7 @@ function display_gps(elt) {
     layers: [osm]
   });
   
-  var options = { timeout: 0 };
+  var options = { timeout: 7200000 };
   var box = L.control.messagebox(options).addTo(map);
   
   box.show( 'Click/tap to enable interaction' );
