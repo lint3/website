@@ -17,67 +17,64 @@
       <a href="/trips.html">Trips</a>
       <a href="/notes.html">Notes</a>
       <a href="/about.html">Jacob</a>
+      <input id="color-mode" type="checkbox" name="color-mode">
+      <label for="color-mode">
+        <span class="dark-mode-hide">Dark Mode</span>
+        <span class="light-mode-hide">Light Mode</span>
+      </label>
     </nav>
-    <p>
-      Paragraph
-    </p>
     
-    <div class="buttons">
-      <div class="buttonbox">
-        <a class="button" href="/index.html">Button A</a>
+    <div class="color-scheme-wrapper">
+      <p>
+        Paragraph
+      </p>
+      
+      <div class="buttons">
+        <div class="buttonbox">
+          <a class="button" href="/index.html">Button A</a>
+        </div>
+        <div class="buttonbox">
+          <a class="button" href="/index.html">Button B</a>
+        </div>
       </div>
-      <div class="buttonbox">
-        <a class="button" href="/index.html">Button B</a>
-      </div>
+      
+      
+      <svg width="200" height="200" viewBox="0 0 220 220"
+       xmlns="http://www.w3.org/2000/svg">
+        <filter id="displacementFilter">
+          <feTurbulence type="turbulence" baseFrequency="0.04"
+              numOctaves="2" result="turbulence"/>
+          <feDisplacementMap in2="turbulence" in="SourceGraphic"
+              scale="50" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+        
+        <filter id="smallDisplacement">
+          <feTurbulence type="turbulence" baseFrequency="0.04"
+              numOctaves="2" result="turbulence"/>
+          <feDisplacementMap in2="turbulence" in="SourceGraphic"
+              scale="50" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+
+        <circle cx="100" cy="100" r="100"
+            style="filter: url(#displacementFilter)"/>
+        
+        <style>
+          .swirlytext { front:bold 10px serif; fill: red; }
+        </style>
+        
+        <text x="100" y="100" class="swirlytext" filter: url(#smallDisplacement)">JC</text>
+      </svg>
+
+      <section id="demo" class="gpx" data-gpx-source="/assets/SLUG_CAT_2022.gpx" data-map-target="demo-map">
+        <article>
+          <div class="map" id="demo-map"></div>
+        </article>
+      </section>
     </div>
-    
-    
-    <svg width="200" height="200" viewBox="0 0 220 220"
-     xmlns="http://www.w3.org/2000/svg">
-      <filter id="displacementFilter">
-        <feTurbulence type="turbulence" baseFrequency="0.04"
-            numOctaves="2" result="turbulence"/>
-        <feDisplacementMap in2="turbulence" in="SourceGraphic"
-            scale="50" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-      
-      <filter id="smallDisplacement">
-        <feTurbulence type="turbulence" baseFrequency="0.04"
-            numOctaves="2" result="turbulence"/>
-        <feDisplacementMap in2="turbulence" in="SourceGraphic"
-            scale="50" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-
-      <circle cx="100" cy="100" r="100"
-          style="filter: url(#displacementFilter)"/>
-      
-      <style>
-        .swirlytext { front:bold 10px serif; fill: red; }
-      </style>
-      
-      <text x="100" y="100" class="swirlytext" filter: url(#smallDisplacement)">JC</text>
-    </svg>
-
-    <section id="demo" class="gpx" data-gpx-source="/assets/SLUG_CAT_2022.gpx" data-map-target="demo-map">
-      <article>
-        <div class="map" id="demo-map"></div>
-      </article>
-    </section>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
     <script src="/notes/tidbits.js"></script>
-
-    <div class="card cookie-alert">
-      <div class="card-body">
-        <h5 class="card-title">&#x1F36A; Annoying Alert</h5>
-        <p class="card-text">This site doesn't use cookies. At all.</p>
-        <div class="btn-toolbar justify-content-end">
-          <a href="https://www.whatismybrowser.com/guides/how-to-enable-cookies/faq/why-do-websites-use-cookies" target="_blank" class="btn btn-link">Learn more</a>
-          <a href="#" class="btn btn-primary accept-cookies">OK</a>
-        </div>
-      </div>
-    </div>
     
   </body>
 </html>

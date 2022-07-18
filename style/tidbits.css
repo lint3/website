@@ -1,3 +1,55 @@
+
+:root {
+  --bg: white;
+  --text: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: black;
+    --text: white;
+  }
+}
+
+#color-mode:checked ~ * {
+  --bg: black;
+  --text: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  #color-mode:checked ~ * {
+    --bg: white;
+    --text: black;
+  }
+}
+
+.color-scheme-wrapper {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.light-mode-hide {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode-hide {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-mode-hide {
+    display: initial;
+  }
+}
+
+
+
+
+
+
 .buttons {
   margin: 2em auto 2em;
 }
