@@ -2,8 +2,8 @@
 
 L.Control.Messagebox = L.Control.extend({
   options: {
-    position: 'topright',
-    timeout: 3000
+    position: 'topleft',
+    timeout: 7200000
   },
   
   onAdd: function (map) {
@@ -71,7 +71,7 @@ function display_gps(elt) {
   var options = { timeout: 7200000 };
   var box = L.control.messagebox(options).addTo(map);
   
-  box.show( 'Click/tap to enable interaction' );
+  box.show( 'Click/tap to toggle interaction' );
   map.scrollWheelZoom.disable();
   map.dragging.disable();
   var togglecount = 0;
