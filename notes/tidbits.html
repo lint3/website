@@ -9,22 +9,27 @@
     <link rel="icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
   </head>
+  
+  
   <body>
-    <nav class="navbar">
-      <a href="/index.html" class="logo">JC</a>
-      <a href="/index.html">Index</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/trips.html">Trips</a>
-      <a href="/notes.html">Notes</a>
-      <a href="/about.html">Jacob</a>
-      <input id="color-mode" type="checkbox" name="color-mode">
-      <label for="color-mode">
-        <span class="dark-mode-hide">Dark Mode</span>
-        <span class="light-mode-hide">Light Mode</span>
-      </label>
-    </nav>
+    
+    <input id="color-mode" type="checkbox" name="color-mode">
+    <label for="color-mode">
+      <span class="dark-mode-hide">Dark Mode</span>
+      <span class="light-mode-hide">Light Mode</span>
+    </label>
     
     <div class="color-scheme-wrapper">
+      <nav class="navbar">
+        <a href="/index.html" class="logo">JC</a>
+        <a href="/index.html">Index</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/trips.html">Trips</a>
+        <a href="/notes.html">Notes</a>
+        <a href="/about.html">Jacob</a>
+
+      </nav>
+    
       <p>
         Paragraph
       </p>
@@ -65,15 +70,9 @@
         <text x="100" y="100" class="swirlytext" filter: url(#smallDisplacement)">JC</text>
       </svg>
 
-      <section id="demo" class="gpx" data-gpx-source="/assets/SLUG_CAT_2022.gpx" data-map-target="demo-map">
-        <article>
-          <div class="map" id="demo-map"></div>
-        </article>
-      </section>
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
     <script src="/notes/tidbits.js"></script>
     
   </body>
