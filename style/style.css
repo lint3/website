@@ -29,6 +29,10 @@ body>* {
   margin-right: 1em;
 }
 
+p {
+  margin-bottom: 0.5em;
+}
+
 /*
  ===========  NAV BAR  ===========
 */
