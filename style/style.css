@@ -70,11 +70,11 @@ p {
 }
 
 .navbar *:nth-child(4) {
-  margin-right: 50%;
+  margin-right: 40%;
 }
 
 .navbar *:nth-child(5) {
-  margin-left: -49%;
+  margin-left: -39%;
 }
 
 .navbar a:hover,
