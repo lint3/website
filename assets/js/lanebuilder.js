@@ -21,4 +21,4 @@ var buildRoad = function(tags) {
 
 var page = document.getElementById("lanebuilder");
 var submitButton = document.getElementById("submittags");
-submitButton.setAttribute("onclick", "buildRoad()");
+submitButton.setAttribute("onclick", buildRoad());
