@@ -15,11 +15,11 @@ function buildRoad(parent) {
   road.setAttribute("class", "road");
   road.appendChild(buildLane("forward"));
   road.appendChild(buildLane("back"));
-  parent.appendChild(road);  
+  page.appendChild(road);  
 }
 
 var page = document.getElementById("lanebuilder");
 var submitButton = document.getElementById("submittags");
-submitButton.addEventListener('click', buildRoad(page));
+submitButton.addEventListener('click', buildRoad);
 
 // submitButton.setAttribute("onclick", "buildRoad()");
