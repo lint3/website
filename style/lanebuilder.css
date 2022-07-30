@@ -15,9 +15,21 @@
   margin: 0.2em;
 }
 
+#lanebuilder {
+  
+}
+
+.road {
+  display: flex;
+}
+
 .lane {
-  width: 10em;
-  height: 20em;
-  color: #4f403c;
+  width: 8em;
+  height: 12em;
+  background: #4f403c;
+  color: white;
   margin: 2px;
+  border: 0;
+  border-left: 2px white solid;
+  border-right: 2px white solid;
 }
