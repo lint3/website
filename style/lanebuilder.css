@@ -3,8 +3,8 @@
 }
 
 #submittags {
-  height: 7.1em;
   vertical-align: top;
+  width: 8em;
 }
 
 #tagentry {
@@ -12,5 +12,5 @@
 }
 
 #tagentry * {
-  margin: 0.1em;
+  margin: 0.2em;
 }
