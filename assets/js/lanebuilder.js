@@ -9,7 +9,7 @@ var buildLane = function(direction) {
   return lane;
 }
 
-var buildRoad = function(tags) {
+var buildRoad = function() {
   
   var road = document.createElement('div');
   road.setAttribute("class", "road");
@@ -21,4 +21,4 @@ var buildRoad = function(tags) {
 
 var page = document.getElementById("lanebuilder");
 var submitButton = document.getElementById("submittags");
-submitButton.setAttribute("onclick", buildRoad());
+submitButton.setAttribute("onclick", "buildRoad()");
