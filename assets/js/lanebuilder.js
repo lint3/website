@@ -1,6 +1,6 @@
 
 
-var buildLane = function(direction) {
+function buildLane(direction) {
   var lane = document.createElement('div');
   lane.setAttribute("class", "lane " + direction);
   var label = document.createElement('p');
@@ -9,7 +9,7 @@ var buildLane = function(direction) {
   return lane;
 }
 
-var buildRoad = function(parent) {
+function buildRoad(parent) {
   
   var road = document.createElement('div');
   road.setAttribute("class", "road");
