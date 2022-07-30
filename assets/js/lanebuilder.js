@@ -9,16 +9,17 @@ var buildLane = function(direction) {
   return lane;
 }
 
-var buildRoad = function() {
+var buildRoad = function(parent) {
   
   var road = document.createElement('div');
   road.setAttribute("class", "road");
   road.appendChild(buildLane("forward"));
   road.appendChild(buildLane("back"));
-  return road;
-  
+  parent.appendChild(road);  
 }
 
 var page = document.getElementById("lanebuilder");
 var submitButton = document.getElementById("submittags");
-submitButton.setAttribute("onclick", "buildRoad()");
+submitButton.addEventListener('click', buildRoad(page));
+
+// submitButton.setAttribute("onclick", "buildRoad()");
