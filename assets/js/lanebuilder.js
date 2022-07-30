@@ -19,6 +19,6 @@ var buildRoad = function(tags) {
   
 }
 
-var page = document.getElementsById("lanebuilder");
+var page = document.getElementById("lanebuilder");
 var submitButton = page.getElementById("submittags");
 submitButton.setAttribute("onclick", "buildRoad()");
