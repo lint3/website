@@ -6,3 +6,11 @@
   height: 7.1em;
   vertical-align: top;
 }
+
+#tagentry {
+  display: flex;
+}
+
+#tagentry * {
+  margin: 0.1em;
+}
