@@ -14,3 +14,10 @@
 #tagentry * {
   margin: 0.2em;
 }
+
+.lane {
+  width: 10em;
+  height: 20em;
+  color: #4f403c;
+  margin: 2px;
+}
