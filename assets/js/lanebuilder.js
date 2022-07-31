@@ -43,14 +43,14 @@ function parseOsmTags(chunk) {
       case "lanes:forward":
         if (forwardAllThru && forwardLanes.length < value) {
           for (let j = forwardLanes.length; j < value; ++j) {
-            forwardLanes.append("thru");
+            forwardLanes.push("thru");
           }
         }
         break;
       case "lanes:backward":
         if (backwardAllThru && backwardLanes.length < value) {
           for (let j = backwardLanes.length; j < value; ++j) {
-            backwardLanes.append("thru");
+            backwardLanes.push("thru");
           }
         }
         break;
