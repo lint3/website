@@ -48,30 +48,30 @@ function parseOsmTags(chunk) {
         
       case "lanes:forward":
         if (forwardLanes.length == 0) {
-          forwardLanes = Array(value).fill("none");
+          forwardLanes = Array(parseInt(value, 10)).fill("none");
         } else {
           // Check that the correct number of lanes are in there
-          if (forwardLanes.length != value) {
+          if (forwardLanes.length != parseInt(value, 10)) {
             errorMsg = "Conflicting values for forward number of lanes";
           }
         }
         break;
       case "lanes:backward":
         if (backwardLanes.length == 0) {
-          backwardLanes = Array(value).fill("none");
+          backwardLanes = Array(parseInt(value, 10)).fill("none");
         } else {
           // Check that the correct number of lanes are in there
-          if (backwardLanes.length != value) {
+          if (backwardLanes.length != parseInt(value, 10)) {
             errorMsg = "Conflicting values for backward number of lanes";
           }
         }
         break;
       case "lanes:both_ways":
         if (bothLanes.length == 0) {
-          bothLanes = Array(value).fill("none");
+          bothLanes = Array(parseInt(value, 10)).fill("none");
         } else {
           // Check that the correct number of lanes are in there
-          if (bothLanes.length != value) {
+          if (bothLanes.length != parseInt(value, 10)) {
             errorMsg = "Conflicting values for both directions number of lanes";
           }
         }
