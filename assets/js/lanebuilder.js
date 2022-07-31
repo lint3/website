@@ -11,12 +11,21 @@ function buildLane(direction) {
 
 function buildRoad(parent) {
   
-  parseOsmTags(document.getElementById("tagbox").value);
+  var laneInfo parseOsmTags(document.getElementById("tagbox").value);
   
   var road = document.createElement('div');
   road.setAttribute("class", "road");
-  road.appendChild(buildLane("forward"));
-  road.appendChild(buildLane("back"));
+  
+  for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
+    road.appendChild(buildLane(laneInfo[0][forwardLane]));
+  }
+  for (let middleLane = 0; middleLane < laneInfo[1].length; ++middleLane) {
+    road.appendChild(buildLane(laneInfo[1][middleLane]));
+  }
+  for(let backwardLane = 0; backwardLane < laneInfo[2].length; ++backwardLane) {
+    road.appendChild(buildLane(laneInfo[2][backwardLane]));
+  }
+
   page.appendChild(road);  
 }
 
@@ -92,6 +101,7 @@ function parseOsmTags(chunk) {
   laneInfo = [forwardLanes, backwardLanes, bothLanes];
   return laneInfo;
 }
+// laneInfo = [forwardLanes, backwardLanes, bothLanes];
 
 var page = document.getElementById("lanebuilder");
 var submitButton = document.getElementById("submittags");
