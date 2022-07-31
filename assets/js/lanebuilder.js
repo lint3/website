@@ -6,11 +6,11 @@ var laneIcons = {
   "left": "\u21B0",
 }
 
-function buildLane(lane, direction) {
+function buildLane(lanetype, direction) {
   var lane = document.createElement('div');
-  lane.setAttribute("class", "lane " + lane + " " + direction);
+  lane.setAttribute("class", "lane " + lanetype + " " + direction);
   var label = document.createElement('p');
-  label.textContent = laneIcons[lane];
+  label.textContent = laneIcons[lanetype];
   lane.appendChild(label)
   return lane;
 }
@@ -63,7 +63,7 @@ function parseOsmTags(chunk) {
         
       case "lanes:forward":
         if (forwardLanes.length == 0) {
-          forwardLanes = Array(parseInt(value, 10)).fill("none");
+          forwardLanes = Array(parseInt(value, 10)).fill("thru");
         } else {
           // Check that the correct number of lanes are in there
           if (forwardLanes.length != parseInt(value, 10)) {
@@ -73,7 +73,7 @@ function parseOsmTags(chunk) {
         break;
       case "lanes:backward":
         if (backwardLanes.length == 0) {
-          backwardLanes = Array(parseInt(value, 10)).fill("none");
+          backwardLanes = Array(parseInt(value, 10)).fill("thru");
         } else {
           // Check that the correct number of lanes are in there
           if (backwardLanes.length != parseInt(value, 10)) {
@@ -83,7 +83,7 @@ function parseOsmTags(chunk) {
         break;
       case "lanes:both_ways":
         if (bothLanes.length == 0) {
-          bothLanes = Array(parseInt(value, 10)).fill("none");
+          bothLanes = Array(parseInt(value, 10)).fill("thru");
         } else {
           // Check that the correct number of lanes are in there
           if (bothLanes.length != parseInt(value, 10)) {
