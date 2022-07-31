@@ -82,7 +82,8 @@ function display_gps(elt) {
     if (map.scrollWheelZoom.enabled()) {
       map.scrollWheelZoom.disable();
       map.dragging.disable();
-      box.show( 'Click/tap to toggle interction' );
+      box.show( 'Click/tap to toggle interaction' );
+      box.addTo(map);
     }
     else {
       map.scrollWheelZoom.enable();
