@@ -98,10 +98,10 @@ function parseOsmTags(chunk) {
         console.log("Unable to parse tag " + key + "=" + value);
     }
   }
-  laneInfo = [forwardLanes, backwardLanes, bothLanes];
+  laneInfo = [forwardLanes, bothLanes, backwardLanes];
   return laneInfo;
 }
-// laneInfo = [forwardLanes, backwardLanes, bothLanes];
+// laneInfo = [forwardLanes, bothLanes, backwardLanes];
 
 var page = document.getElementById("lanebuilder");
 var submitButton = document.getElementById("submittags");
