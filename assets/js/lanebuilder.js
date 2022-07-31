@@ -1,29 +1,29 @@
 
 
-function buildLane(direction) {
+function buildLane(text, direction) {
   var lane = document.createElement('div');
-  lane.setAttribute("class", "lane " + direction);
+  lane.setAttribute("class", "lane " + text);
   var label = document.createElement('p');
-  label.textContent = direction;
+  label.textContent = text;
   lane.appendChild(label)
   return lane;
 }
 
 function buildRoad(parent) {
   
-  var laneInfo parseOsmTags(document.getElementById("tagbox").value);
+  var laneInfo = parseOsmTags(document.getElementById("tagbox").value);
   
   var road = document.createElement('div');
   road.setAttribute("class", "road");
   
   for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
-    road.appendChild(buildLane(laneInfo[0][forwardLane]));
+    road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
   for (let middleLane = 0; middleLane < laneInfo[1].length; ++middleLane) {
-    road.appendChild(buildLane(laneInfo[1][middleLane]));
+    road.appendChild(buildLane(laneInfo[1][middleLane], "middle"));
   }
   for(let backwardLane = 0; backwardLane < laneInfo[2].length; ++backwardLane) {
-    road.appendChild(buildLane(laneInfo[2][backwardLane]));
+    road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
   }
 
   page.appendChild(road);  
