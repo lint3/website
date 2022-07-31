@@ -21,9 +21,11 @@ function buildRoad(parent) {
 }
 
 function parseOsmTags(chunk) {
+  let totalLanes = 0;
   let forwardLanes = [];
   let backwardLanes = [];
-  let forwardAllThru = true;
+  let bothLanes = [];
+  let forwardAllThru = true; // We don't have any turn data 
   let backwardAllThru = true;
   
   let tags = chunk.split("\n");
@@ -38,7 +40,8 @@ function parseOsmTags(chunk) {
     // Check which key the tag contains
     switch (key) {
       case "lanes":
-        // numLanes = parseInt(value, 10);
+        if 
+        totalLanes = parseInt(value, 10);
         break;
       case "lanes:forward":
         if (forwardAllThru && forwardLanes.length < value) {
@@ -54,7 +57,13 @@ function parseOsmTags(chunk) {
           }
         }
         break;
-      case "turn:lanes:forward": 
+      case "lanes:both_ways":
+        // TODO: Complete
+        break;
+      case "turn:lanes:forward":
+        let indivTurnLanes = key.split("|");
+        if (forwardAllThru
+        for (let j = indivTurnLanes.length; j < 
         
         break;
       default:

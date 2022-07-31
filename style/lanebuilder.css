@@ -1,5 +1,5 @@
 #tagbox {
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 
 #submittags {
