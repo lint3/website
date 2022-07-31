@@ -77,13 +77,13 @@ function parseOsmTags(chunk) {
         }
         break;
       case "turn:lanes:forward":
-        forwardLanes = key.split("|");
+        forwardLanes = value.split("|");
         break;
       case "turn:lanes:backward":
-        backwardLanes = key.split("|");
+        backwardLanes = value.split("|");
         break;
       case "turn:lanes:both_ways":
-        bothLanes = key.split("|");
+        bothLanes = value.split("|");
         break;
       default:
         console.log("Unable to parse tag " + key + "=" + value);
