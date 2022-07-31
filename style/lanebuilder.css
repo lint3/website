@@ -24,15 +24,16 @@
 }
 
 .lane {
-  width: 8em;
-  height: 12em;
-  font-size: 1em;
+  width: 2em;
+  height: 4em;
+  font-size: 4em;
   background: #201a19;
   color: white;
   margin: 2px;
   border: 0;
   border-left: 2px white solid;
   border-right: 2px white solid;
+  text-align: center;
 }
 
 .backward {

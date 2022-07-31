@@ -1,7 +1,7 @@
 var laneIcons = {
   "through": "\u2191",
-  "through;right": "\u2191 \u21B1",
-  "through;left": "\u2191 \u21B0",
+  "through;right": "\u2191\u21B1",
+  "through;left": "\u2191\u21B0",
   "right": "\u21B1",
   "left": "\u21B0",
 }
@@ -22,21 +22,17 @@ function buildRoad(parent) {
   var road = document.createElement('div');
   road.setAttribute("class", "road");
   
+  for(let backwardLane = 0; backwardLane < laneInfo[2].length; ++backwardLane) {
+    road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
+  }
   for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
     road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
   for (let middleLane = 0; middleLane < laneInfo[1].length; ++middleLane) {
     road.appendChild(buildLane(laneInfo[1][middleLane], "both"));
   }
-  for(let backwardLane = 0; backwardLane < laneInfo[2].length; ++backwardLane) {
-    road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
-  }
 
-  page.appendChild(road);  
-}
-
-function fillThruLanes(numlanes) {
-  // TODO: Abstract this out
+  page.appendChild(road);
 }
 
 function parseOsmTags(chunk) {
