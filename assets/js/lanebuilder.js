@@ -43,7 +43,6 @@ function parseOsmTags(chunk) {
     // Check which key the tag contains
     switch (key) {
       case "lanes":
-        if 
         totalLanes = parseInt(value, 10);
         break;
         
