@@ -20,20 +20,23 @@ function buildRoad(parent) {
   page.appendChild(road);  
 }
 
+function fillThruLanes(numlanes) {
+  // TODO: Abstract this out
+}
+
 function parseOsmTags(chunk) {
+
   let totalLanes = 0;
   let forwardLanes = [];
   let backwardLanes = [];
   let bothLanes = [];
-  let forwardAllThru = true; // We don't have any turn data 
-  let backwardAllThru = true;
+  errorMsg = "";
   
   let tags = chunk.split("\n");
   
   // For each line of text in tags:
   for (let i = 0; i < tags.length; ++i) {
     let tag = tags[i].split("=");
-    
     let key = tag[0];
     let value = tag[1];
     
@@ -43,33 +46,51 @@ function parseOsmTags(chunk) {
         if 
         totalLanes = parseInt(value, 10);
         break;
+        
       case "lanes:forward":
-        if (forwardAllThru && forwardLanes.length < value) {
-          for (let j = forwardLanes.length; j < value; ++j) {
-            forwardLanes.push("thru");
+        if (forwardLanes.length == 0) {
+          forwardLanes = Array(value).fill("none");
+        } else {
+          // Check that the correct number of lanes are in there
+          if (forwardLanes.length != value) {
+            errorMsg = "Conflicting values for forward number of lanes";
           }
         }
         break;
       case "lanes:backward":
-        if (backwardAllThru && backwardLanes.length < value) {
-          for (let j = backwardLanes.length; j < value; ++j) {
-            backwardLanes.push("thru");
+        if (backwardLanes.length == 0) {
+          backwardLanes = Array(value).fill("none");
+        } else {
+          // Check that the correct number of lanes are in there
+          if (backwardLanes.length != value) {
+            errorMsg = "Conflicting values for backward number of lanes";
           }
         }
         break;
       case "lanes:both_ways":
-        // TODO: Complete
+        if (bothLanes.length == 0) {
+          bothLanes = Array(value).fill("none");
+        } else {
+          // Check that the correct number of lanes are in there
+          if (bothLanes.length != value) {
+            errorMsg = "Conflicting values for both directions number of lanes";
+          }
+        }
         break;
       case "turn:lanes:forward":
-        let indivTurnLanes = key.split("|");
-        if (forwardAllThru
-        for (let j = indivTurnLanes.length; j < 
-        
+        forwardLanes = key.split("|");
+        break;
+      case "turn:lanes:backward":
+        backwardLanes = key.split("|");
+        break;
+      case "turn:lanes:both_ways":
+        bothLanes = key.split("|");
         break;
       default:
         console.log("Unable to parse tag " + key + "=" + value);
     }
-        
+    laneInfo = [forwardLanes, backwardLanes, bothLanes];
+    return laneInfo;
   }
 }
 
