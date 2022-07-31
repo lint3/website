@@ -74,24 +74,22 @@ function display_gps(elt) {
   box.show( 'Click/tap to toggle interaction' );
   map.scrollWheelZoom.disable();
   map.dragging.disable();
-  var togglecount = 0;
   
 
   
   map.on('click', function() {
-    if (togglecount < 2) {
-      togglecount = togglecount + 1;
-    } else {
-      box.remove();
-    }
+    
     if (map.scrollWheelZoom.enabled()) {
       map.scrollWheelZoom.disable();
       map.dragging.disable();
+      box.show( 'Click/tap to toggle interction' );
     }
     else {
       map.scrollWheelZoom.enable();
       map.dragging.enable();
+      box.remove();
     }
+    
   });
   
   var maplayers = {
