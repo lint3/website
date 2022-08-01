@@ -35,7 +35,3 @@
   border-right: 2px white solid;
   text-align: center;
 }
-
-.backward {
-  transform: rotateX(180deg);
-}

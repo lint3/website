@@ -1,4 +1,4 @@
-var laneIcons = {
+var laneIconsForward = {
   "through": "\u2191",
   "through;right": "\u2191\u21B1",
   "through;left": "\u2191\u21B0",
@@ -6,11 +6,23 @@ var laneIcons = {
   "left": "\u21B0",
 }
 
+var laneIconsBackward = {
+  "through": "\u2193",
+  "through;right": "\u2193\u21B2",
+  "through;left": "\u2191\u21B3",
+  "right": "\u21B2",
+  "left": "\u21B3",
+}
+
 function buildLane(lanetype, direction) {
   var lane = document.createElement('div');
   lane.setAttribute("class", "lane " + lanetype + " " + direction);
   var label = document.createElement('p');
-  label.textContent = laneIcons[lanetype];
+  if (direction === "forward") {
+    label.textContent = laneIconsForward[lanetype];
+  } else if (direction === "backward") {
+    label.textContent = laneIconsBackward[lanetype];
+  }
   lane.appendChild(label)
   return lane;
 }
