@@ -1,8 +1,8 @@
 body {
   background:
-    linear-gradient(90deg, white 21px, transparent 1%) center,
-    linear-gradient(white 21px, transparent 1%) center,
-    black;
+    linear-gradient(90deg, #FCF4EA 20px, transparent 1%) center,
+    linear-gradient(#FCF4EA 20px, transparent 1%) center,
+    #D6C2AB;
   background-size: 22px 22px;
 }
 
