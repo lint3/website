@@ -1,18 +1,10 @@
-$bg-color: white;
-$dot-color: black;
-
-$dot-size: 1px;
-$dot-space: 22px;
-
 body {
   background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+    linear-gradient(90deg, white 21px, transparent 1%) center,
+    linear-gradient(white 21px, transparent 1%) center,
+    black;
+  background-size: 22px 22px;
 }
-
-
 
 #tagbox {
   white-space: pre-wrap;
