@@ -14,6 +14,11 @@ var laneIconsBackward = {
   "left": "\u21B3",
 }
 
+var laneIconsBoth = {
+  "left": "\u21B3\n\u21B0",
+}
+  
+
 function buildLane(lanetype, direction) {
   var lane = document.createElement('div');
   lane.setAttribute("class", "lane " + lanetype + " " + direction);
@@ -22,6 +27,8 @@ function buildLane(lanetype, direction) {
     label.textContent = laneIconsForward[lanetype];
   } else if (direction === "backward") {
     label.textContent = laneIconsBackward[lanetype];
+  } else if (direction === "both_ways") {
+    label.textContent = laneIconsBoth[lanetype];
   }
   lane.appendChild(label)
   return lane;
@@ -41,7 +48,7 @@ function buildRoad(parent) {
     road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
   for (let middleLane = 0; middleLane < laneInfo[1].length; ++middleLane) {
-    road.appendChild(buildLane(laneInfo[1][middleLane], "both"));
+    road.appendChild(buildLane(laneInfo[1][middleLane], "both_ways"));
   }
 
   page.appendChild(road);
