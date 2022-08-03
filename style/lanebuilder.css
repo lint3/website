@@ -8,11 +8,12 @@ body {
 
 #tagbox {
   white-space: pre-wrap;
+  width: 70%;
 }
 
 #submittags {
   vertical-align: top;
-  width: 8em;
+  width: 30%;
 }
 
 #tagentry {
@@ -33,7 +34,7 @@ body {
 
 .lane {
   width: 100px;
-  height: 200px;
+  height: 210px;
   font-size: 45pt;
   background: #201a19;
   color: white;

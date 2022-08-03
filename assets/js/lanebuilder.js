@@ -15,7 +15,7 @@ var laneIconsBackward = {
 }
 
 var laneIconsBoth = {
-  "left": "\u21B3\n\u21B0",
+  "left": "\u21B3\u21B0",
 }
   
 
@@ -44,11 +44,11 @@ function buildRoad(parent) {
   for(let backwardLane = laneInfo[2].length - 1; backwardLane >=0; --backwardLane) {
     road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
   }
-  for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
-    road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
-  }
   for (let middleLane = 0; middleLane < laneInfo[1].length; ++middleLane) {
     road.appendChild(buildLane(laneInfo[1][middleLane], "both_ways"));
+  }
+  for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
+    road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
 
   page.appendChild(road);
