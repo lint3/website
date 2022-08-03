@@ -32,9 +32,9 @@ body {
 }
 
 .lane {
-  width: 2em;
-  height: 4em;
-  font-size: 4em;
+  width: 100px;
+  height: 200px;
+  font-size: 45pt;
   background: #201a19;
   color: white;
   margin: 2px;
@@ -42,4 +42,8 @@ body {
   border-left: 2px white solid;
   border-right: 2px white solid;
   text-align: center;
+}
+
+.lane p {
+  margin: 0;
 }

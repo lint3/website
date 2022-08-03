@@ -34,7 +34,7 @@ function buildRoad(parent) {
   var road = document.createElement('div');
   road.setAttribute("class", "road");
   
-  for(let backwardLane = 0; backwardLane < laneInfo[2].length; ++backwardLane) {
+  for(let backwardLane = laneInfo[2].length - 1; backwardLane >=0; --backwardLane) {
     road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
   }
   for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
