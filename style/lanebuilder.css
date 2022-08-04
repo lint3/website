@@ -45,18 +45,18 @@ body {
 }
 
 .marker-outside {
-  width: 2px;
-  border-left: solid yellow;
+  width: 0px;
+  border-left: 2px solid white;
 }
 
 .marker-mid {
-  width: 2px;
-  border-left: dashed yellow;
+  width: 0px;
+  border-left: 2px dashed yellow;
 }
 
 .center-left, .center-right {
-  width: 2px;
-  border-left: solid green;
+  width: 0px;
+  border-left: 2px solid green;
 }
 
 .lane {
