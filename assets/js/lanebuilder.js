@@ -54,7 +54,7 @@ function buildRoad(parent) {
   road.setAttribute("class", "road");
   
   road.appendChild(buildSpacer("pre-spacer"));
-  road.appendChild(buildLaneMarker("marker-outside")
+  road.appendChild(buildLaneMarker("marker-outside"));
   
   for(let backwardLane = laneInfo[2].length - 1; backwardLane >=0; --backwardLane) {
     road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
@@ -70,7 +70,7 @@ function buildRoad(parent) {
     road.appendChild(buildLaneMarker("marker-mid"));
     road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
-  road.appendChild(buildLaneMarker("marker-outside");
+  road.appendChild(buildLaneMarker("marker-outside"));
   road.appendChild(buildSpacer("post-spacer"));
 
   page.appendChild(road);
