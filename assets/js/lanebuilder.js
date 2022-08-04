@@ -21,7 +21,7 @@ var laneIconsBoth = {
 
 function buildLane(lanetype, direction) {
   var lane = document.createElement('div');
-  lane.setAttribute("class", "lane " + lanetype + " " + direction);
+  lane.setAttribute("class", "lane-element lane " + lanetype + " " + direction);
   var label = document.createElement('p');
   if (direction === "forward") {
     label.textContent = laneIconsForward[lanetype];
@@ -36,8 +36,14 @@ function buildLane(lanetype, direction) {
 
 function buildSpacer(spacerClass) {
   var spacer = document.createElement('div');
-  spacer.setAttribute("class", spacerClass);
+  spacer.setAttribute("class", "lane-element " + spacerClass);
   return spacer;
+}
+
+function buildLaneMarker(markerType) {
+  var laneMarker = document.createElement('div');
+  laneMarker.setAttribute("class", "lane-element lane-marker " + markerType);
+  return laneMarker;
 }
 
 function buildRoad(parent) {
@@ -47,17 +53,25 @@ function buildRoad(parent) {
   var road = document.createElement('div');
   road.setAttribute("class", "road");
   
-  road.appendChild(buildSpacer("preSpacer"));
+  road.appendChild(buildSpacer("pre-spacer"));
+  road.appendChild(buildLaneMarker("marker-outside")
+  
   for(let backwardLane = laneInfo[2].length - 1; backwardLane >=0; --backwardLane) {
     road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
+    road.appendChild(buildLaneMarker("marker-mid"));
   }
+
   for (let middleLane = 0; middleLane < laneInfo[1].length; ++middleLane) {
+    road.appendChild(buildLaneMarker("center-left"));
     road.appendChild(buildLane(laneInfo[1][middleLane], "both_ways"));
+    road.appendChild(buildLaneMarker("center-right"));
   }
   for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
+    road.appendChild(buildLaneMarker("marker-mid"));
     road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
-  road.appendChild(buildSpacer("postSpacer"));
+  road.appendChild(buildLaneMarker("marker-outside");
+  road.appendChild(buildSpacer("post-spacer"));
 
   page.appendChild(road);
 }

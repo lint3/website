@@ -32,14 +32,31 @@ body {
   display: flex;
 }
 
+.lane-element {
+  height: 194px;
+}
+
 .preSpacer {
   width: 4px;
-  height: 194px;
 }
 
 .postSpacer {
   width: 0;
-  height: 194px;
+}
+
+.marker-outside {
+  width: 2px;
+  border-left: 11px solid yellow;
+}
+
+.marker-mid {
+  width: 2px;
+  border-left: 11px dashed yellow;
+}
+
+.center-left, .center-right {
+  width: 2px;
+  border-left: 11px solid green;
 }
 
 .lane {
@@ -48,7 +65,7 @@ body {
   font-size: 45pt;
   background: #201a19;
   color: white;
-  margin: 2px;
+  margin: 0;
   border: 0;
   border-left: 2px white solid;
   border-right: 2px white solid;
