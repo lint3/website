@@ -46,17 +46,17 @@ body {
 
 .marker-outside {
   width: 2px;
-  border-left: 11px solid yellow;
+  border-left: solid yellow;
 }
 
 .marker-mid {
   width: 2px;
-  border-left: 11px dashed yellow;
+  border-left: dashed yellow;
 }
 
 .center-left, .center-right {
   width: 2px;
-  border-left: 11px solid green;
+  border-left: solid green;
 }
 
 .lane {
@@ -67,8 +67,6 @@ body {
   color: white;
   margin: 0;
   border: 0;
-  border-left: 2px white solid;
-  border-right: 2px white solid;
   text-align: center;
 }
 
