@@ -32,9 +32,19 @@ body {
   display: flex;
 }
 
+.preSpacer {
+  width: 4px;
+  height: 194px;
+}
+
+.postSpacer {
+  width: 0;
+  height: 194px;
+}
+
 .lane {
-  width: 100px;
-  height: 210px;
+  width: 84px;
+  height: 194px;
   font-size: 45pt;
   background: #201a19;
   color: white;

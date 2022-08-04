@@ -34,6 +34,12 @@ function buildLane(lanetype, direction) {
   return lane;
 }
 
+function buildSpacer(spacerClass) {
+  var spacer = document.createElement('div');
+  spacer.setAttribute("class", spacerClass);
+  return spacer;
+}
+
 function buildRoad(parent) {
   
   var laneInfo = parseOsmTags(document.getElementById("tagbox").value);
@@ -41,6 +47,7 @@ function buildRoad(parent) {
   var road = document.createElement('div');
   road.setAttribute("class", "road");
   
+  road.appendChild(buildSpacer("preSpacer"));
   for(let backwardLane = laneInfo[2].length - 1; backwardLane >=0; --backwardLane) {
     road.appendChild(buildLane(laneInfo[2][backwardLane], "backward"));
   }
@@ -50,6 +57,7 @@ function buildRoad(parent) {
   for (let forwardLane = 0; forwardLane < laneInfo[0].length; ++forwardLane) {
     road.appendChild(buildLane(laneInfo[0][forwardLane], "forward"));
   }
+  road.appendChild(buildSpacer("postSpacer"));
 
   page.appendChild(road);
 }
