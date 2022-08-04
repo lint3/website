@@ -36,12 +36,12 @@ body {
   height: 194px;
 }
 
-.preSpacer {
+.pre-spacer {
   width: 4px;
   background: black;
 }
 
-.postSpacer {
+.post-spacer {
   width: 4px;
   background: black;
 }
