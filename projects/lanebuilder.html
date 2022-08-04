@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/lanebuilder.css">
     <link rel="icon" href="/assets/favicon.ico">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="leaflet-routing-machine.css" />
+
+    
   </head>
   <body class="dotted" id="notebook">
     <nav class="navbar">
@@ -32,11 +37,12 @@ turn:lanes:backward=through|right
       <input type="button" id="submittags" value="Submit Tags">
     </div>
     
-    <div id="lanebuilder">
-    
-    </div>
-    
+    <div id="lanebuilder"></div>
     <script src="/assets/js/lanebuilder.js"></script>
+
+    <div id="map" class="map"></div>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="/assets/js/leaflet-routing-machine.js"></script>
     
   </body>
 </html>
