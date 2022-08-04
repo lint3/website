@@ -38,25 +38,30 @@ body {
 
 .preSpacer {
   width: 4px;
+  background: black;
 }
 
 .postSpacer {
-  width: 0;
+  width: 4px;
+  background: black;
 }
 
 .marker-outside {
   width: 0px;
   border-left: 2px solid white;
+  background: black;
 }
 
 .marker-mid {
   width: 0px;
   border-left: 2px dashed yellow;
+  background: black;
 }
 
 .center-left, .center-right {
   width: 0px;
   border-left: 2px solid green;
+  background: black;
 }
 
 .lane {
