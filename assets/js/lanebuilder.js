@@ -73,7 +73,7 @@ function buildRoad(parent) {
   road.appendChild(buildLaneMarker("marker-outside"));
   road.appendChild(buildSpacer("post-spacer"));
 
-  page.appendChild(road);
+  page.prepend(road);
 }
 
 function parseOsmTags(chunk) {
