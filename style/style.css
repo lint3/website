@@ -221,4 +221,8 @@ img {
   column-width: 24em;
 }
 
-
+.side-warning {
+  width: 40%;
+  float: right;
+  margin-right: 50%;
+}
