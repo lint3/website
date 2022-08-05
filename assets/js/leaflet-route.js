@@ -11,3 +11,12 @@ L.Routing.control({
     ],
     routeWhileDragging: true
 }).addTo(map);
+
+var routeControl = L.Routing.control({...});
+
+routeControl.on('routesfound', function(e) {
+   var routes = e.routes;
+   var summary = routes[0].summary;
+   // alert distance and time in km and minutes
+   alert('Total distance is ' + summary.totalDistance / 1000 + ' km and total time is ' + Math.round(summary.totalTime % 3600 / 60) + ' minutes');
+});
