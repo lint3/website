@@ -98,6 +98,10 @@
   margin: 0; 
 }
 
+/*
+ * 0intro.dev
+ */
+
 .bigbutts {
   display: flex;
   flex-flow: column nowrap;
@@ -124,4 +128,9 @@
   transition-timing-function: ease;
   display: block;
   box-sizing: border-box;
+}
+
+.bigbutt:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 1px 1px gray;
 }
