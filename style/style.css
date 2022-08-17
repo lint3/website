@@ -233,3 +233,15 @@ img {
   overflow: hidden;
   margin-top: 1rem;
 }
+
+.ring-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ring-nav a {
+  
+}
