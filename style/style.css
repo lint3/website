@@ -243,6 +243,10 @@ img {
   padding: 0 0.5em;
 }
 
+.ring-nav * {
+  margin: 0;
+}
+
 code {
   background-color: #DBDBDB;
   border-radius: 2px;
