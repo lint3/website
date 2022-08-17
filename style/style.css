@@ -239,9 +239,13 @@ img {
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding: 0;
+  margin-top: 1em;
+  padding: 1em;
 }
 
-.ring-nav a {
-  
+code {
+  background-color: #CCCCCC;
+  border-radius: 2px;
 }
+
+
