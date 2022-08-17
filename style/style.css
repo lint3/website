@@ -237,16 +237,13 @@ img {
 .ring-nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 0;
   margin-top: 1em;
-  padding: 1em;
 }
 
 code {
   background-color: #DBDBDB;
   border-radius: 2px;
-  padding: 0.2em;
+  padding: 0.1em;
 }
 
 
