@@ -244,8 +244,9 @@ img {
 }
 
 code {
-  background-color: #CCCCCC;
+  background-color: #DBDBDB;
   border-radius: 2px;
+  padding: 0.2em;
 }
 
 
