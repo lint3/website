@@ -238,12 +238,15 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  padding: 0 0.5em;
 }
 
 code {
   background-color: #DBDBDB;
   border-radius: 2px;
-  padding: 0.1em;
+  padding: 0.1em 0.3em;
 }
 
 
