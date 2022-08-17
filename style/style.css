@@ -226,3 +226,10 @@ img {
   border: 1px solid #9b9915;
   background: #e0dd4c;
 }
+
+.vimeo-box {
+  border-radius: 4px;
+  border: black solid 1px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
