@@ -22,8 +22,8 @@
     <h1>OQB</h1>
     
     <div id="prefix-prefs-form">
-      <label for="output-type">Output as </label>
-      <select name="output-type" id="output-type-selector">
+      <label for="output-format">Output format:</label>
+      <select name="output-format" id="output-format-selector">
         <option value="json">JSON</option>
         <option value="csv">CSV</option>
       </select>
@@ -34,6 +34,18 @@
         <option value="30" selected>30s</option>
         <option value="60">60s</option>
         <option value="0">None</option>
+      </select>
+      
+      <label for="global-bbox">Search within</label>
+      <select name="global-bbox" id="global-bbox-selector">
+        <option value="bbox">Viewport bbox</option>
+        <option value="none">Planet Earth</option>
+      </select>
+      
+      <label for="output-type">Output Type</label>
+      <select name="output-type" id="output-type-selector">
+        <option value="plain">All</option>
+        <option value="centers">Centers (todo)</option>
       </select>
     </div>
     

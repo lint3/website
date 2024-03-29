@@ -7,26 +7,24 @@
 .group {
     position: relative;
     border-radius: 4px;
-    border: 1px solid #888;
-    margin: 4px;
+    
+    margin: 1em;
     padding: 12px;
-    box-shadow: 4px 2px 4px gray;
+    box-shadow: 6px 4px 6px gray;
     transition: all 0.05s linear;
     background-color: white;
 }
 
-
-.group.and:before {
-    content: "AND";
+.requirement {
+    box-shadow: none;
+    border: 1px solid #888;
 }
 
-.group.or:before {
-    content: "OR";
+.group-logical {
+    border: 2px solid #888;
+    margin: 1em;
 }
 
-.group.not:before {
-    content: "NOT";
-}
 
 pre {
     margin: 4px;

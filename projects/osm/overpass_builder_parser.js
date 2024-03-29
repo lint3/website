@@ -7,8 +7,16 @@ class QuerySubstring {
         return this._s;
     }
     
+    add(line) {
+        this._s += ('    '.repeat(this._depth)) + line;
+    }
+    
     addLine(line) {
-        this._s += "\n" + ('    '.repeat(this._depth)) + line;
+        if (line === undefined) {
+            this._s += '\n';
+        } else {
+            this._s += ('    '.repeat(this._depth)) + line + '\n';
+        }
     }
     
     addLineIndent(line) {
@@ -31,13 +39,51 @@ class QuerySubstring {
     }
 }
     
+function checkPrefixOptions(q) {
+    let outputFormat = document.getElementById('output-format-selector').value;
+    let timeoutLength = document.getElementById('timeout-selector').value;
+    let bboxType = document.getElementById('global-bbox-selector').value;
+    
+    if (outputFormat == 'json') {
+        q.add('[out:json]');
+    } else if (outputFormat == 'csv') {
+        q.add('[out:csv]');
+    } else {
+        // pass
+    }
+    
+    if (timeoutLength != 0) {
+        q.add('[timeout:' + timeoutLength + ']');
+    } else {
+        // q.addLine();
+    }
+    
+    if (bboxType == 'none') {
+        // pass
+    } else if (bboxType == 'bbox') {
+        q.add('[bbox:{{bbox}}]');
+    } else {
+        
+    }
+    
+    q.addLine(';');
+        
+}
 
-
+function checkSuffixOptions(q) {
+    let outputType = document.getElementById('output-type-selector').value;
+    
+    if (outputType == 'plain') {
+        q.addLine('out body; >; out skel qt;');
+    } else if (outputType == 'centers') {
+        q.addLine('out center;');
+    }
+}
 
 function parseStructureToQueryString(group, q) {
     
     // Bases: Requirements
-    if (group.classList.contains('requirement-tag')) {
+    if (group.classList.contains('requirement')) {
         q.addLine(parseRequirementTag(group));
     } else if (group.classList.contains('requirement-some-other-example')) {
         // pass
@@ -45,13 +91,23 @@ function parseStructureToQueryString(group, q) {
     
     // Recurse: Group
     if (group.classList.contains('group-logical')) {
-        q.addLine('(');
-        q.increaseDepth();
-        for (child of group.children) {
-            parseStructureToQueryString(child, q);
+        
+        if (group.classList.contains('and')) {
+            // todo
+        } else if (group.classList.contains('or')) {
+            q.addLine('(');
+            q.increaseDepth();
+            for (child of group.children) {
+                parseStructureToQueryString(child, q);
+            }
+            q.decreaseDepth();
+            q.addLine(');');
+        } else if (group.classList.contains('not')) {
+            // todo
         }
-        q.decreaseDepth();
-        q.addLine(');');
+        q.increaseDepth();
+
+        
     } else if (group.classList.contains('group-some-other-example')) {
         // pass
     }
@@ -63,7 +119,7 @@ function parseRequirementTag(group) {
     result += 'nwr["' + group.querySelector('input[name="key"]').value + '"';
     // TODO: Equality type
     result += '=';
-    result += '"' + group.querySelector('input[name="value"]').value + '"' + ']';
+    result += '"' + group.querySelector('input[name="value"]').value + '"' + '];';
     
     return result;
 }
