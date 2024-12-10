@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://cytem.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+title = 'Jacob'
+theme = 'hugo-pure'
