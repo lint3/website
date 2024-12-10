@@ -1,8 +1,8 @@
-baseURL = 'https://cytem.com/'
-languageCode = 'en-us'
-title = 'Jacob'
-theme = 'xmin'
-footnotereturnlinkcontents = "↩"
+baseURL: "https://cytem.com/"
+languageCode: "en-us"
+title: "Jacob"
+theme: "xmin"
+footnotereturnlinkcontents: "↩"
 
 permalinks:
   trip: "/trips/:year/:month/:day/"
