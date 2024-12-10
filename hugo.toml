@@ -1,4 +1,4 @@
 baseURL = 'https://cytem.com/'
 languageCode = 'en-us'
 title = 'Jacob'
-theme = 'hugo-pure'
+theme = 'xmin'
