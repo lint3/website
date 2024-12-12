@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2024-12-12
+title: Fixing Linux Problems
+params:
+    projectstatus: Maintenance
+---
+
 
 Nothin's ever easy. But things tend to be easier than they used to. But they're still pretty hard.
 

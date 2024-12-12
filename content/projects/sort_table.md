@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2024-12-12
+title: Sort HTML Table
+params:
+    projectstatus: Complete
+---
+
 
 # `table_tools.js`
 
