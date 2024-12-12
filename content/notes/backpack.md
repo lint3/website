@@ -1,4 +1,9 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2024-12-12T00:00:00
+draft: false
+title: Backpacking Gear
+weight: 100
+---
 
 # Backpacking Gear
 
