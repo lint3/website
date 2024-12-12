@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2022-08-17
+draft: false
+title: Git Commit Messages
+weight: 100
+---
+
 
 Recent commits:
 
@@ -9,9 +15,3 @@ Recent commits:
 - `b921e84` - "This should do the trick"
 - `dd068a3` - "This should do the trick"
 - `422ab2e` - "This should do the trick"
-
-[&lt;-- Previous](/log/swirl_air.html)
-
-2022-08-17
-
-[Next --&gt;](/log/ads.html)

@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2022-10-07
+draft: false
+title: On Ads
+weight: 100
+---
+
 
 # Internet Advertisements
 
@@ -28,9 +34,3 @@ Advertisements pay for much of the "free" Internet.
 - If you are morally against ads, you should avoid visiting websites that rely on their funding in the first place.
 
 Much of this can be seen as rationalization on my part. I actually agree. I acknowledge that not viewing ads might be immoral - Not sure!
-
-[&lt;-- Previous](/log/git_commits.html)
-
-2022-10-27
-
-[Next --&gt;](/log/svg.html)
