@@ -1,4 +1,7 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+title: Peaks
+---
+
 
 # All Peaks I've Climbed
 
