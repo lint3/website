@@ -1,14 +1,4 @@
----
-date: 2024-12-12
-title: The Bikes
-params: '{projectstatus: Maintenance}'
----
-
-
-
-
 # 1986 Specialized Stumpjumper
-
 ![Orange bike on a trail](/assets/images/stumpjumper.webp)
 
 Cromo frame, 26" wheels, and sick thumb shifters.
