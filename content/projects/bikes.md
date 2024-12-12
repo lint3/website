@@ -1,8 +1,7 @@
 ---
 date: 2024-12-12
 title: The Bikes
-params:
-    projectstatus: Maintenance
+params: '{projectstatus: Maintenance}'
 ---
 
 
