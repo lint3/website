@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2024-12-12
+draft: false
+title: Tips
+weight: 100
+---
+
 
 No theme in particular. Hopefully one or two of these helps you out!
 

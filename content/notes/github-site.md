@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2024-12-12
+draft: false
+title: Create a Basic Website
+weight: 100
+---
+
 
 Here are some steps to follow to create a basic website/blog using Github Pages, a free website hosting service.
 

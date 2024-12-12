@@ -1,5 +1,5 @@
 ---
-date: 2024-12-12T00:00:00
+date: 2024-12-12
 draft: false
 title: Backpacking Gear
 weight: 100

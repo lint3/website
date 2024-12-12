@@ -1,4 +1,10 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
+---
+date: 2024-12-12
+draft: false
+title: Great Software
+weight: 100
+---
+
 
 Here's some excellent software I've come to love.
 

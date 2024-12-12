@@ -1,5 +1,9 @@
-[JC](/index.html) [Index](/index.html) [Projects](/projects.html) [Trips](/trips.html) [Notes](/notes.html) [Jacob](/about.html)
-
+---
+date: 2024-12-12
+draft: false
+title: Gear Checklist
+weight: 100
+---
 ## Camping
 
 - Tent
